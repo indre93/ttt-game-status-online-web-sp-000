@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board != WIN_COMBINATIONS
+  if board != WIN_COMBINATIONS || board == " "
    false 
   else 
    true
