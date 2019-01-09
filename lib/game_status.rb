@@ -20,8 +20,8 @@ def won?(board)
    false 
   else 
     WIN_COMBINATIONS.each do |win_combination|
-      win_combination.each do |index|
-        if 
+      win_combination.each do |position|
+        
   end 
 end
 
