@@ -19,7 +19,8 @@ def won?(board)
   if board != WIN_COMBINATIONS || board == " "
    false 
   else 
-   true
+    WIN_COMBINATIONS.each do |win_combination|
+      
   end 
 end
 
