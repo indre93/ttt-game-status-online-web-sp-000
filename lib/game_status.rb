@@ -34,9 +34,9 @@ def full?(board)
 end
 
 def draw?(board)
-  if board != won?(board) || board == full?(board)
+  if board != WIN_COMBINATIONS || board == full?(board)
     true
-  else 
+  else board ==
     false
   end
 end
@@ -50,6 +50,7 @@ def over?(board)
 end
 
 def winner(board)
+  
   
 end
 
