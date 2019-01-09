@@ -34,17 +34,17 @@ def full?(board)
 end
 
 def draw?(board)
-  if board != WIN_COMBINATIONS || board == full?(board)
-    true
-  else 
+  if board == WIN_COMBINATIONS || board != full?(board)
     false
+  else board != WIN_COMBINATIONS || board == full?(board)
+    true
   end
 end
 
 def over?(board)
-  if board == draw?(board) || board == full?(board)
+  if board == won?(board) || board == draw?(board) || board == full?(board)
     true
-  else board == won?(board) 
+  else 
     false
   end
 end
