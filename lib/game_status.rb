@@ -28,26 +28,6 @@ def full?(board)
   board.none? {|index| index == " "}
 end
 
-def draw?(board)
-  if board != won?(board) && full?(board)
-    true
-  else 
-    false
-  end
-end
-
-def over?(board)
-  if board == won?(board) || board == draw?(board) || board == full?(board)
-    true
-  else 
-    false
-  end
-end
-
-def winner(board)
-  
-  
-end
 
 
 
