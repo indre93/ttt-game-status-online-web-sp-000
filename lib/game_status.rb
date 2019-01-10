@@ -25,8 +25,8 @@ def won?(board)
 end
 
 def full?(board)
-  board.any? {|index| index == " "}
-
+  board.any? {|index| index == " " }
+end
 end
 
 def draw?(board)
