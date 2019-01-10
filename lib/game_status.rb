@@ -38,8 +38,10 @@ end
 
 def winner(board)
   win_combination = won?(board)
-  token = win_combination
-  board(token)
+  if win_combination
+   token = win_combination
+   board(token)
+ end
 end
 
 
