@@ -25,13 +25,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |index|
-    if index == "X" || index == "O"
-      true
-    else 
-      false
-    end
-  end
+  board.none? {|index| index != " "}
 end
 
 def draw?(board)
